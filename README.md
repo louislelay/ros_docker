@@ -4,7 +4,7 @@
 
 A Docker setup for ROS (Robot Operating System) Melodic with a full desktop environment. This setup provides a ready-to-use development and simulation environment for robotic applications.
 
-**Prerequisites**: Ensure that Docker is installed on your system before proceeding with the setup. Docker is required to run the provided containerized environment.
+Prerequisites: Ensure that Docker is installed on your system before proceeding with the setup. Docker is required to run the provided containerized environment.
 
 ## Getting Started
 
