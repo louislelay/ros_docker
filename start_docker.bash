@@ -10,6 +10,6 @@ docker run -it --rm \
 --mount type=bind,source=/dev,target=/dev \
 --privileged \
 --net="host" \
---name="ros_melodic_docker" \
+--name="ros_docker" \
 --workdir="/home" \
-ros_melodic_docker
+ros_docker
