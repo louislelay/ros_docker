@@ -41,9 +41,6 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends \
 		ros-${ROS_DISTRO}-rqt-image-view \
 		&& rm -rf /var/lib/apt/lists/*
 
-# create catkin_ws
-RUN mkdir -p /home/catkin_ws/src
-
 #-----------------------------------------------------------------------------
 
 # config terminator
