@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends \
 		&& rm -rf /var/lib/apt/lists/*
 
 
-#-----------------------------------------------------------------------------
+#---- Add your modifications below to add the functionnality you need ----
 
 # install packages
 RUN apt-get update && apt-get install -q -y --no-install-recommends \
