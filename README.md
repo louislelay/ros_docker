@@ -1,5 +1,10 @@
 # ROS Docker Setup
 
+[![noetic][noetic-badge]][noetic]
+[![melodic][melodic-badge]][melodic]
+[![kinetic][kinetic-badge]][kinetic]
+
+
 This setup provides a Docker container for ROS (Robot Operating System) with a full desktop environment, ideal for robotic development and simulation.
 
 **Prerequisites**: Ensure Docker is installed on your system before proceeding. Instructions for installing Docker are provided at the end of this document.
@@ -134,3 +139,15 @@ Changes made within the Docker container are temporary. To make changes permanen
    sudo rm -rf /var/lib/docker
    sudo rm -rf /var/lib/containerd
    ```
+
+
+
+
+[noetic-badge]: https://img.shields.io/badge/ROS-Noetic-blue.svg
+[noetic]: https://wiki.ros.org/noetic
+
+[melodic-badge]: https://img.shields.io/badge/ROS-Melodic-blue.svg
+[melodic]: https://wiki.ros.org/melodic
+
+[kinetic-badge]: https://img.shields.io/badge/ROS-Kinetic-blue.svg
+[kinetic]: https://wiki.ros.org/kinetic
