@@ -42,31 +42,6 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends \
 
 #-----------------------------------------------------------------------------
 
-# config terminator
-RUN mkdir -p /root/.config/terminator
-
-RUN echo '[global_config]\n\
-	title_hide_sizetext = True\n\
-[keybindings]\n\
-[profiles]\n\
-	[[default]]\n\
-		icon_bell = False\n\
-		background_color = "#300a24"\n\
-		cursor_shape = ibeam\n\
-		cursor_color = "#aaaaaa"\n\
-		foreground_color = "#ffffff"\n\
-		show_titlebar = False\n\
-		rewrap_on_resize = False\n\
-[layouts]\n\
-	[[default]]\n\
-		[[[window0]]]\n\
-			type = Window\n\
-			parent = ""\n\
-		[[[child1]]]\n\
-			type = Terminal\n\
-			parent = window0\n\
-[plugins]'>>/root/.config/terminator/config
-
 # bash
 COPY ./setup.bash /
 
