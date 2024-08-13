@@ -1,8 +1,31 @@
-# ROS Melodic Docker Setup
+# ROS Docker Setup
 
-This setup provides a Docker container for ROS (Robot Operating System) Melodic with a full desktop environment, ideal for robotic development and simulation.
+This setup provides a Docker container for ROS (Robot Operating System) with a full desktop environment, ideal for robotic development and simulation.
 
 **Prerequisites**: Ensure Docker is installed on your system before proceeding. Instructions for installing Docker are provided at the end of this document.
+
+---
+
+## Installation
+
+To clone the repository for your specific ROS distribution, use the appropriate command below:
+
+- **ROS Kinetic:**
+  ```bash
+  git clone -b ros_kinetic https://github.com/louislelay/ros_docker.git
+  ```
+
+- **ROS Melodic:**
+  ```bash
+  git clone -b ros_melodic https://github.com/louislelay/ros_docker.git
+  ```
+
+- **ROS Noetic:**
+  ```bash
+  git clone -b ros_noetic https://github.com/louislelay/ros_docker.git
+  ```
+
+--- 
 
 ## Getting Started
 
@@ -11,6 +34,7 @@ This setup provides a Docker container for ROS (Robot Operating System) Melodic 
    ```bash
    ./install_image.bash
    ```
+   Depending on the power of your computer, this process may take some time. However, once it's done, any future changes you make to this file will be much faster.
 
 2. **Start the Docker Container**:  
    Launch the Docker container using this command:  
@@ -21,6 +45,8 @@ This setup provides a Docker container for ROS (Robot Operating System) Melodic 
 3. **Exit the Docker Container**:  
    To exit the container, type `exit`.
 
+--- 
+
 ## Workspace Setup
 
 The `home` directory is shared between your computer and the Docker container, ensuring that files persist after you exit the container. To set up your ROS workspace:
@@ -28,6 +54,8 @@ The `home` directory is shared between your computer and the Docker container, e
 1. Create a `catkin_ws` directory inside the `home` folder.
 2. Inside `catkin_ws`, create a `src` directory.
 3. You can now develop ROS packages within the `src` folder.
+
+--- 
 
 ## Installing Additional Features
 
@@ -38,6 +66,8 @@ Changes made within the Docker container are temporary. To make changes permanen
    ```bash
    ./install_image.bash
    ```
+
+--- 
 
 ## Docker Installation Instructions
 
@@ -89,6 +119,8 @@ Changes made within the Docker container are temporary. To make changes permanen
    ```bash
    docker run hello-world
    ```
+
+--- 
 
 ## Uninstalling Docker and Cleaning Up
 
