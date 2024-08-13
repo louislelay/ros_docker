@@ -1,5 +1,5 @@
 ARG ARCH=osrf
-ARG ROS_DISTRO=melodic
+ARG ROS_DISTRO=noetic
 
 FROM ${ARCH}/ros:${ROS_DISTRO}-desktop-full
 
