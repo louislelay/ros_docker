@@ -11,6 +11,17 @@ This setup provides a Docker container for ROS (Robot Operating System) with a f
 
 ---
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Workspace Setup](#workspace-setup)
+- [Installing Additional Features](#installing-additional-features)
+- [Docker Installation Instructions](#docker-installation-instructions)
+- [Uninstalling Docker and Cleaning Up](#uninstalling-docker-and-cleaning-up)
+
+---
+
 ## Installation
 
 To clone the repository for your specific ROS distribution, use the appropriate command below:
