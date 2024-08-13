@@ -1,8 +1,7 @@
 ARG ARCH=osrf
 ARG ROS_DISTRO=melodic
-ARG OS_DISTRO=bionic
 
-FROM ${ARCH}/ros:${ROS_DISTRO}-desktop-full-${OS_DISTRO}
+FROM ${ARCH}/ros:${ROS_DISTRO}-desktop-full
 
 ARG USER_ID
 ARG GROUP_ID
