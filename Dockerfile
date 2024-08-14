@@ -18,12 +18,18 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends \
 
 # install packages
 RUN apt-get update && apt-get install -q -y --no-install-recommends \
-		git \
-		nano \
-		terminator \
-		python3-pip \
-		python-pip \
-		&& rm -rf /var/lib/apt/lists/*
+    build-essential \
+    cmake \
+    git \
+    net-tools \
+    nano \
+    terminator \
+    && rm -rf /var/lib/apt/lists/*
+
+# install python packages
+RUN apt-get update && apt-get install -q -y --no-install-recommends \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
 
 # install ROS useful tools
 RUN apt-get update && apt-get install -q -y --no-install-recommends \
