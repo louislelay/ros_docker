@@ -2,4 +2,4 @@
 xauth merge /dot.Xauthority
 
 # ROS
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
