@@ -28,17 +28,17 @@ To clone the repository for your specific ROS distribution, use the appropriate 
 
 - **ROS Kinetic:**
   ```bash
-  git clone -b ros_kinetic https://github.com/louislelay/ros_docker.git
+  git clone -b ros_kinetic https://github.com/louislelay/ros_docker.git && cd ros_docker
   ```
 
 - **ROS Melodic:**
   ```bash
-  git clone -b ros_melodic https://github.com/louislelay/ros_docker.git
+  git clone -b ros_melodic https://github.com/louislelay/ros_docker.git && cd ros_docker
   ```
 
 - **ROS Noetic:**
   ```bash
-  git clone -b ros_noetic https://github.com/louislelay/ros_docker.git
+  git clone -b ros_noetic https://github.com/louislelay/ros_docker.git && cd ros_docker
   ```
 
 --- 
