@@ -19,6 +19,7 @@ This setup provides a Docker container for ROS (Robot Operating System) with a f
 - [Installing Additional Features](#installing-additional-features)
 - [Docker Installation Instructions](#docker-installation-instructions)
 - [Uninstalling Docker and Cleaning Up](#uninstalling-docker-and-cleaning-up)
+- [Known Issues](#known-issues)
 
 ---
 
@@ -162,3 +163,11 @@ Changes made within the Docker container are temporary. To make changes permanen
 
 [kinetic-badge]: https://img.shields.io/badge/ROS-Kinetic-blue.svg
 [kinetic]: https://wiki.ros.org/kinetic
+
+--- 
+
+## Known Issues
+
+### Terminator not opening
+
+Instead of running `terminator` try running `terminator -u`
